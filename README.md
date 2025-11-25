@@ -1,6 +1,6 @@
 # RSIP-tree
 
-自增ID 使用base36（26个小写字母+10个数字）编码，以压缩长度。
+> 自增ID 使用base36（26个小写字母+10个数字）编码。
 
 ```mermaid
 graph TD
