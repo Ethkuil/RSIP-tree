@@ -7,7 +7,7 @@
 ```mermaid
 graph TD
 
-subgraph 保持自我管理意识
+subgraph 5[保持自我管理意识]
 0[叶节点数<7时，每天加入恰好1个新定式]
 end
 
