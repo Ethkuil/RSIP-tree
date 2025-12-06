@@ -25,7 +25,7 @@ subgraph g[身体健康]
     end
   end
   subgraph i[饮食]
-    .rsipkeep
+    .rsipkeep_i
   end
 end
 
@@ -37,7 +37,7 @@ subgraph f[恢复自制力]
   8[玩得尽兴：每天分出至少15分钟以上连续时间（目前默认时间是晚间洗漱后），有意识地专门用于娱乐。放松地做“多余的事”，想做什么做什么；这段时间禁止为所谓正事焦虑。若因故未能满足，则需尽快（1天内）制定初步调娱计划]
   8 --> 9
   subgraph 9[早睡]
-    .rsipkeep
+    .rsipkeep_9
   end
 end
 ```
