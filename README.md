@@ -15,7 +15,7 @@ subgraph 5[保持自我管理意识]
   0[每天检视RSIP树，并考虑是否要插入新节点]
 end
 0 --> 1
-0 --> 6
+0 --> m
 
 subgraph d[断舍离]
   1[手机不上床]
@@ -24,15 +24,13 @@ subgraph d[断舍离]
   1 --> l[准备上床、刚下床的时间内，使用需断舍离的相关设备（手机、电脑 etc.）需保持站立]
 end
 
-subgraph g[身体健康]
-  subgraph h[卫生]
-    subgraph 6[晚间洗漱]
-      b[晚间洗漱1级：睡前洗了就行]
-    end
-  end
-  subgraph i[饮食]
-    .rsipkeep_i
-    class .rsipkeep_i failed
+m[起床后，下床（、听歌）、洗漱、喝水，在完成这些之前先什么消息都别看]
+m --> 6
+class m failed
+
+subgraph h[卫生]
+  subgraph 6[晚间洗漱]
+    b[晚间洗漱1级：睡前洗了就行]
   end
 end
 
