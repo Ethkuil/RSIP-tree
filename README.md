@@ -12,10 +12,10 @@ graph TD
 classDef failed stroke:#ff0000, stroke-width:3px, color:#ff0000, fill:#fff5f5, stroke-dasharray: 5
 
 subgraph 5[保持自我管理意识]
-  0[节点数<7时，每天加入恰好1个新定式]
+  0[每天检视RSIP树，并考虑是否要插入新节点]
 end
-5 --> 1
-5 --> 6
+0 --> 1
+0 --> 6
 
 subgraph d[断舍离]
   1[手机不上床]
