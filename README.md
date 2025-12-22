@@ -39,6 +39,7 @@ subgraph 清晨和上午
   清晨洗漱 --> 早饭[早饭：早上一定要吃早饭]
   class 早饭 failed
   早饭 --> 清晨看TODO[清晨检视和调度TODOs]
+  class 清晨看TODO failed
 end
 class 清晨和上午 failed
 
@@ -52,6 +53,7 @@ subgraph 中午和下午
   午饭后洗漱 --> 午休[午休：11:00~14:00内，刻意休息至少1分钟]
   class 午休 failed
   午休 --> 中午看TODO[中午检视和调度TODOs]
+  class 中午看TODO failed
 end
 class 中午和下午 failed
 
@@ -65,6 +67,7 @@ subgraph 傍晚和晚上
   晚饭后洗漱 --> 酉休[酉休：17:00~19:00内，刻意休息至少1分钟]
   class 酉休 failed
   酉休 --> 傍晚看TODO[傍晚检视和调度TODOs]
+  class 傍晚看TODO failed
 end
 class 傍晚和晚上 failed
 
