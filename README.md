@@ -23,17 +23,14 @@ graph TD
 
 classDef failed stroke:#ff0000, stroke-width:3px, color:#ff0000, fill:#fff5f5, stroke-dasharray: 5
 
-RSIP[每天检视RSIP图，并考虑是否要插入新节点]
-
-
-RSIP --> 底线规则
-subgraph 底线规则
-  手机不上床
+subgraph pre
+  RSIP[每天检视RSIP图，并考虑是否要插入新节点]
+  RSIP --> 手机不上床
   手机不上床 --> 站立使用[准备上床、刚下床的时间内，使用需断舍离的相关设备（手机、电脑 etc.）需保持站立]
 end
 
 
-RSIP --> 清晨和上午
+pre --> 清晨和上午
 subgraph 清晨和上午
   清晨洗漱[清晨洗漱：起床后，下床（、听歌）、洗漱、打水，在完成这些之前先什么消息都别看]
   清晨洗漱 --> 早饭[早饭：早上一定要吃早饭]
@@ -44,7 +41,7 @@ end
 class 清晨和上午 failed
 
 
-RSIP --> 中午和下午
+pre --> 中午和下午
 subgraph 中午和下午
   午饭[午饭：若因拖延症而到12:40尚未吃午饭，当天不吃普通午饭]
   class 午饭 failed
@@ -59,7 +56,7 @@ end
 class 中午和下午 failed
 
 
-RSIP --> 傍晚和晚上
+pre --> 傍晚和晚上
 subgraph 傍晚和晚上
   晚饭[晚饭：若因拖延症而到18:40尚未吃晚饭，当天不吃普通晚饭]
   class 晚饭 failed
@@ -118,4 +115,8 @@ subgraph 深夜
   class 早睡 failed
 end
 class 深夜 failed
+
+深夜 --> post
+subgraph post
+end
 ```
