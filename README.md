@@ -69,7 +69,7 @@ subgraph 傍晚和晚上
 end
 class 傍晚和晚上 failed
 
-傍晚和晚上 --> 深夜
+pre --> 深夜
 subgraph 深夜
   深夜今日琐事[清空今日琐事（允许自由裁量）]
   class 深夜今日琐事 failed
