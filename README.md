@@ -70,6 +70,8 @@ class 傍晚和晚上 failed
 
 pre --> 深夜
 subgraph 深夜
+  深夜提醒[深夜提醒：22:00耳机闹钟（自动）]
+  class 深夜提醒 failed
   深夜今日琐事[清空今日琐事（允许自由裁量）]
   class 深夜今日琐事 failed
   深夜今日琐事 --> 深夜洗漱
