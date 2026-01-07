@@ -32,16 +32,12 @@ end
 
 
 pre_tail --> 清晨和上午_head
-subgraph 清晨和上午
   清晨和上午_head --> 清晨洗漱
   清晨洗漱[清晨洗漱：起床后，下床（、听歌）、洗漱、打水，在完成这些之前先什么消息都别看]
   清晨洗漱 --> 早饭[早饭：早上一定要吃早饭]
   早饭 --> 清晨看TODO[清晨检视和调度TODOs]
-end
-
 
 pre_tail --> 中午和下午_head
-subgraph 中午和下午
   中午和下午_head --> 午饭[午饭：若因拖延症而到12:40尚未吃午饭，当天不吃普通午饭]
   午饭 --> 午饭后洗漱[午饭后洗漱：洗漱、打水]
   午饭后洗漱 --> 中午今日琐事[清空今日琐事（允许自由裁量）]
@@ -50,12 +46,9 @@ subgraph 中午和下午
   class 午休 failed
   午休 --> 中午看TODO[中午检视和调度TODOs]
   class 中午看TODO failed
-end
-class 中午和下午 failed
 
 
 pre_tail --> 傍晚和晚上_head
-subgraph 傍晚和晚上
   傍晚和晚上_head --> 晚饭[晚饭：若因拖延症而到18:40尚未吃晚饭，当天不吃普通晚饭]
   class 晚饭 failed
   晚饭 --> 晚饭后洗漱[晚饭后洗漱：洗漱、打水]
@@ -66,11 +59,8 @@ subgraph 傍晚和晚上
   class 酉休 failed
   酉休 --> 傍晚看TODO[傍晚检视和调度TODOs]
   class 傍晚看TODO failed
-end
-class 傍晚和晚上 failed
 
 pre_tail --> 深夜_head
-subgraph 深夜
   深夜_head --> 深夜提醒[深夜提醒：22:00耳机闹钟（自动）]
   class 深夜提醒 failed
   深夜今日琐事[清空今日琐事（允许自由裁量）]
@@ -113,10 +103,9 @@ subgraph 深夜
     class 早睡1级 failed
   end
   class 早睡 failed
-end
-class 深夜 failed
+  早睡 --> 深夜_tail
 
-深夜 --> post
+深夜_tail --> post
 subgraph post
 end
 ```
