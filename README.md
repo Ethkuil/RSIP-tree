@@ -24,7 +24,7 @@ graph TD
 classDef failed stroke:#ff0000, stroke-width:3px, color:#ff0000, fill:#fff5f5, stroke-dasharray: 5
 
 subgraph pre
-  RSIP[每天检视RSIP图，并考虑是否要插入新节点]
+  RSIP[每天检视RSIP图，熟记，尤其是相对容易失败的叶节点]
   RSIP --> 手机不上床
   手机不上床 --> 站立使用[准备上床、刚下床的时间内，使用需断舍离的相关设备（手机、电脑 etc.）需保持站立]
 end
