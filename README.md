@@ -23,10 +23,9 @@ graph TD
 
 classDef failed stroke:#ff0000, stroke-width:3px, color:#ff0000, fill:#fff5f5, stroke-dasharray: 5
 
-pre_head --> RSIP[每天检视RSIP图，熟记，尤其是相对容易失败的叶节点]
+pre_head --> RSIP[检视和记忆RSIP图，尤其叶节点]
 RSIP --> 手机不上床
-手机不上床 --> 站立使用[准备上床、刚下床的时间内，使用需断舍离的相关设备（手机、电脑 etc.）需保持站立]
-站立使用 --> pre_tail
+手机不上床 --> pre_tail
 
 
 pre_tail --> 清晨和上午_head
@@ -83,6 +82,7 @@ end
 class 早睡 failed
 早睡 --> 深夜_tail
 class 深夜_tail failed
+
 
 深夜_tail --> post_head
 class post_head failed
