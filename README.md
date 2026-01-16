@@ -57,7 +57,6 @@ class 傍晚看TODO failed
 
 pre_tail --> 深夜_head
 深夜_head --> 深夜提醒[深夜提醒：22:00耳机闹钟（自动）]
-class 深夜提醒 failed
 深夜提醒 --> 深夜今日琐事[清空今日琐事（允许自由裁量）]
 class 深夜今日琐事 failed
 深夜今日琐事 --> 深夜洗漱
