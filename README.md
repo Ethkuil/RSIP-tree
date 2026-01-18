@@ -70,17 +70,17 @@ class 深夜洗漱 failed
 深夜洗漱 --> 玩得尽兴[玩得尽兴：每天分出至少15分钟连续时间（目前默认时间是深夜洗漱后），刻意娱乐。放松做“多余的事”，想做啥做啥；禁止为所谓正事焦虑。若因故未能满足，则需尽快（1天内）制定初步调娱计划]
 class 玩得尽兴 failed
 
-玩得尽兴 --> 早睡
-subgraph 早睡
+玩得尽兴 --> 早睡提醒
+subgraph 早睡提醒
   早睡提醒1级[早睡提醒1级：23:30, 23:50耳机闹钟（自动）]
   class 早睡提醒1级 failed
-  早睡提醒1级 --> 早点上床
-  class 早点上床 failed
-  早点上床 --> 早点睡觉
-  class 早点睡觉 failed
 end
-class 早睡 failed
-早睡 --> 深夜_tail
+class 早睡提醒 failed
+早睡提醒 --> 早点上床
+class 早点上床 failed
+早点上床 --> 床上读书[床上读书：读文不读理，需有书、签、笔，不强制读]
+class 床上读书 failed
+床上读书 --> 深夜_tail
 class 深夜_tail failed
 
 
