@@ -38,9 +38,13 @@ pre_tail --> 清晨和上午_head
 pre_tail --> 中午和下午_head
 中午和下午_head --> 午饭[午饭或其他仪式：10:00～12:40]
 午饭 --> 午饭后洗漱[午饭后洗漱：洗漱、打水]
+class 午饭后洗漱 failed
 午饭后洗漱 --> 中午今日琐事[清空今日琐事（允许自由裁量）]
+class 中午今日琐事 failed
 中午今日琐事 --> 午休[午休：11:00~14:00内，刻意休息至少1分钟]
+class 午休 failed
 午休 --> 中午看TODO[中午检视和调度TODOs]
+class 中午看TODO failed
 
 
 pre_tail --> 傍晚和晚上_head
