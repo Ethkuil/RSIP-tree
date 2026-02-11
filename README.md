@@ -73,7 +73,7 @@ class 深夜洗漱 failed
 class 玩得尽兴 failed
 玩得尽兴 --> 早睡提醒
 subgraph 早睡提醒
-  早睡提醒1级[早睡提醒1级：23:30, 23:50耳机闹钟（自动）]
+  早睡提醒1级[早睡提醒1级：23:50耳机闹钟（自动）]
   class 早睡提醒1级 failed
 end
 class 早睡提醒 failed
