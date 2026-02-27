@@ -84,4 +84,6 @@ class 深夜_tail failed
 
 深夜_tail --> post_head
 class post_head failed
+post_head --> 睡到自然醒[睡到自然醒：闹钟作兜底，而不被闹钟叫醒]
+class 睡到自然醒 failed
 ```
