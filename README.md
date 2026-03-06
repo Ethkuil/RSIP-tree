@@ -31,8 +31,11 @@ RSIP --> 手机不上床
 pre_tail --> 清晨和上午_head
 清晨和上午_head --> 清晨洗漱
 清晨洗漱[清晨洗漱：起床后，下床（、听歌）、洗漱、打水，在完成这些之前先什么消息都别看]
+class 清晨洗漱 failed
 清晨洗漱 --> 早饭
+class 早饭 failed
 早饭 --> 清晨看TODO[清晨检视和调度TODOs：拆到足够细并预演]
+class 清晨看TODO failed.
 清晨看TODO --> 上午工作[上午工作：番茄工作法]
 class 上午工作 failed
 
