@@ -36,6 +36,8 @@ class 清晨洗漱 failed
 class 早饭 failed
 早饭 --> 清晨看TODO[清晨检视和调度TODOs：拆到足够细并预演]
 class 清晨看TODO failed
+清晨看TODO --> 清晨闲棋[清晨闲棋：不要在正事时间做这些，如果有正事]
+class 清晨闲棋 failed
 清晨看TODO --> 上午工作[上午工作：番茄工作法]
 class 上午工作 failed
 
