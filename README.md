@@ -46,7 +46,6 @@ class 中午今日琐事 failed
 午休 --> 中午看TODO[中午检视和调度TODOs：拆到足够细并预演]
 class 中午看TODO failed
 中午看TODO --> 下午工作[下午工作：番茄工作法]
-class 下午工作 failed
 
 pre_tail --> 傍晚和晚上_head
 傍晚和晚上_head --> 傍晚断舍离[傍晚断舍离：纵有理由，试想与过去4年的钝痛比如何]
