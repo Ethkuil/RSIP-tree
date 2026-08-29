@@ -59,15 +59,11 @@ pre_tail --> 深夜_head
 深夜_head --> 深夜断舍离[深夜断舍离：纵有理由，试想与过去4年的钝痛比如何]
 深夜断舍离 --> 深夜洗漱
 深夜洗漱 --> 睡前断舍离[睡前断舍离：纵有理由，试想与过去4年的钝痛比如何]
-class 睡前断舍离 failed
 睡前断舍离 --> 早点上床
-class 早点上床 failed
 早点上床 --> 深夜_tail
-class 深夜_tail failed
 
 
 深夜_tail --> post_head
 class post_head failed
 post_head --> 睡到自然醒[睡到自然醒：闹钟作兜底，而不被闹钟叫醒 & 睡醒时间合理]
-class 睡到自然醒 failed
 ```
